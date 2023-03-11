@@ -5,25 +5,42 @@
         static void Main(string[] args)
         {
             bool flag = true;
-            Console.WriteLine("Welcome to User Registration Using Lambda Expression");
-            Console.WriteLine("Please enter an option");
-            Console.WriteLine("1 : First Name");
-            Console.WriteLine("0 : Exit");
-            int option = Convert.ToInt32(Console.ReadLine());
+         
             UserRegistration userRegistration = new UserRegistration();
 
             while(flag)
             {
+                Console.WriteLine("Welcome to User Registration Using Lambda Expression");
+                Console.WriteLine("Please enter an option");
+                Console.WriteLine("1 : First Name");
+                Console.WriteLine("2 : Last Name");
+                Console.WriteLine("3 : Email ID");
+                Console.WriteLine("4 : Phone Number");
+                Console.WriteLine("0 : Exit");
+                Console.Write("ENTER YOUR CHOICE : ");
+                int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         userRegistration.CheckFirstName("Pranav");
+                        Console.ReadKey();
                         break;
+                    case 2:
+                        userRegistration.CheckLastName("Waghmare");
+                        Console.ReadKey();
+                        break;
+                    case 3:
+                        userRegistration.CheckEmailID("abc.xyz@bridgelabz.co.in");
+                        Console.ReadKey();
+                        break;
+                   
+                    
                     case 0:
                         flag = false;
                         break;
                     default:
                         Console.WriteLine("Please enter right option");
+                        Console.ReadKey();
                         break;
                 }
             }
