@@ -88,7 +88,19 @@ namespace User_Registration_Using_Lambda
 
         public void CheckPassword3(string password)
         {
-            if (userDetails.Any(x => x.Password2.IsMatch(password)))
+            if (userDetails.Any(x => x.Password3.IsMatch(password)))
+            {
+                Console.WriteLine("\n\tValid");
+            }
+            else
+            {
+                Console.WriteLine("\n\tInvalid");
+            }
+        }
+
+        public void CheckPassword4(string password)
+        {
+            if (userDetails.Any(x => x.Password4.IsMatch(password)))
             {
                 Console.WriteLine("\n\tValid");
             }
