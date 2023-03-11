@@ -33,7 +33,10 @@
                         userRegistration.CheckEmailID("abc.xyz@bridgelabz.co.in");
                         Console.ReadKey();
                         break;
-                   
+                    case 4:
+                        userRegistration.CheckPhoneNumber("91 9998885552");
+                        Console.ReadKey();
+                        break;
                     
                     case 0:
                         flag = false;

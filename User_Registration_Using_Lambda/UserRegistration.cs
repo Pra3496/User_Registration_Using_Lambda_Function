@@ -50,6 +50,28 @@ namespace User_Registration_Using_Lambda
             }
         }
 
-      
+        public void CheckPhoneNumber(string phoneNumber)
+        {
+            if (userDetails.Any(x => x.PhoneNumber.IsMatch(phoneNumber)))
+            {
+                Console.WriteLine("\n\tValid");
+            }
+            else
+            {
+                Console.WriteLine("\n\tInvalid");
+            }
+        }
+
+        public void CheckPassword1(string password)
+        {
+            if (userDetails.Any(x => x.Password1.IsMatch(password)))
+            {
+                Console.WriteLine("\n\tValid");
+            }
+            else
+            {
+                Console.WriteLine("\n\tInvalid");
+            }
+        }
     }
 }
