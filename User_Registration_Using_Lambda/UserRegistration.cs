@@ -73,5 +73,19 @@ namespace User_Registration_Using_Lambda
                 Console.WriteLine("\n\tInvalid");
             }
         }
+
+        public void CheckPassword2(string password)
+        {
+            if (userDetails.Any(x => x.Password2.IsMatch(password)))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
+
+      
     }
 }

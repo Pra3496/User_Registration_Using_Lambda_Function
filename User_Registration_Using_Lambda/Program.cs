@@ -16,6 +16,8 @@
                 Console.WriteLine("2 : Last Name");
                 Console.WriteLine("3 : Email ID");
                 Console.WriteLine("4 : Phone Number");
+                Console.WriteLine("5 : Password");
+                Console.WriteLine("6 : Password atleast numeric");
                 Console.WriteLine("0 : Exit");
                 Console.Write("ENTER YOUR CHOICE : ");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -37,7 +39,14 @@
                         userRegistration.CheckPhoneNumber("91 9998885552");
                         Console.ReadKey();
                         break;
-                    
+                    case 5:
+                        userRegistration.CheckPassword1("PranavW");
+                        Console.ReadKey();
+                        break;
+                    case 6: 
+                        userRegistration.CheckPassword2("PranavW1");
+                        Console.ReadKey();
+                        break;
                     case 0:
                         flag = false;
                         break;
