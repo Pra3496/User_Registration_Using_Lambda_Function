@@ -18,6 +18,7 @@
                 Console.WriteLine("4 : Phone Number");
                 Console.WriteLine("5 : Password");
                 Console.WriteLine("6 : Password atleast numeric");
+                Console.WriteLine("7 : Password atleast UpperCase");
                 Console.WriteLine("0 : Exit");
                 Console.Write("ENTER YOUR CHOICE : ");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -45,6 +46,10 @@
                         break;
                     case 6: 
                         userRegistration.CheckPassword2("PranavW1");
+                        Console.ReadKey();
+                        break;
+                    case 7:
+                        userRegistration.CheckPassword3("Pranavw1");
                         Console.ReadKey();
                         break;
                     case 0:

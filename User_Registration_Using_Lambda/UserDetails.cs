@@ -15,7 +15,7 @@ namespace User_Registration_Using_Lambda
         public Regex PhoneNumber = new Regex(@"^[0-9]{2}[ ][0-9]{10}$");
         public Regex Password1 = new Regex(@"^[A-Za-z]{8,}$");
         public Regex Password2 = new Regex(@"^[A-Za-z0-9]{1,}$");
-        public Regex Password3 = new Regex(@"^[A-Za-z0-9]{1,}$");
+        public Regex Password3 = new Regex(@"^[A-Z]{1}[a-b]{1}[0-9]{1}$");
         public Regex Password4 = new Regex(@"^[A-Za-z0-9]{1,}[@|$|#|&|!|_]{1}$");
         public Regex SampleEmails = new Regex(@"^[a-zA-Z]{3}[_,.,+,-]?[a-zA-Z0-9]*@[a-zA-Z0-9]{1,10}.(com|com.au|net|co.in|com.com)$");
     }
