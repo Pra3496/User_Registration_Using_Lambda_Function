@@ -110,6 +110,18 @@ namespace User_Registration_Using_Lambda
             }
         }
 
+        public void SampleEmails(string password)
+        {
+            if (userDetails.Any(x => x.SampleEmails.IsMatch(password)))
+            {
+                Console.WriteLine("\n\tValid");
+            }
+            else
+            {
+                Console.WriteLine("\n\tInvalid");
+            }
+        }
+
 
     }
 }

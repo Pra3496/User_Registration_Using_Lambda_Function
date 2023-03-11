@@ -20,6 +20,7 @@
                 Console.WriteLine("6 : Password atleast numeric");
                 Console.WriteLine("7 : Password atleast UpperCase");
                 Console.WriteLine("8 : Password atleast Special Charecter");
+                Console.WriteLine("9 : SampleEmails");
                 Console.WriteLine("0 : Exit");
                 Console.Write("ENTER YOUR CHOICE : ");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -55,6 +56,10 @@
                         break;
                     case 8:
                         userRegistration.CheckPassword4("Prana1@");
+                        Console.ReadKey();
+                        break;
+                    case 9:
+                        userRegistration.SampleEmails("abc.xyz@bridgelabz.co.in");
                         Console.ReadKey();
                         break;
                     case 0:
